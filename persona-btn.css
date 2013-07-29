@@ -3,7 +3,7 @@
   position: relative;
   color: #fff;
   display: inline-block;
-  font-size: 24px;
+  font-size: 15px;
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
   line-height: 2;
@@ -29,7 +29,7 @@
 }
 /* Icon */
 .persona-button .text:after {
-  background: url(persona-guy.svg) center center no-repeat;
+  background: url(./persona-guy.svg) center center no-repeat;
   background-size: 1.5em;
   content: '';
   display: block;
@@ -99,4 +99,15 @@
   -webkit-transform-origin: top left;
   -moz-transform-origin: top left;
   transform-origin: top left;
+}
+.persona-button iframe {
+  border: none;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
 }
