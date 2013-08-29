@@ -1,4 +1,3 @@
-/* Link body */
 .persona-button {
   position: relative;
   color: #fff;
@@ -19,7 +18,7 @@
   background: #3db3e4;
 }
 .persona-button:active,
-.persona-button:focus {
+.persona-button .persona-button:focus {
   top: 1px;
   box-shadow: none;
 }
@@ -27,9 +26,8 @@
   display: inline-block;
   padding: 0 0.5em 0 3em;
 }
-/* Icon */
 .persona-button .text:after {
-  background: url(./persona-guy.svg) center center no-repeat;
+  background: url("./persona-guy.svg") center center no-repeat;
   background-size: 1.5em;
   content: '';
   display: block;
@@ -40,7 +38,6 @@
   top: 0;
   z-index: 10;
 }
-/*  Icon background */
 .persona-button .text:before {
   content: '';
   display: block;
@@ -54,7 +51,6 @@
   background: #81cded;
   border-radius: 3px 0 0 3px;
 }
-/* Triangle */
 .persona-button:before {
   content: '';
   display: block;
@@ -99,15 +95,4 @@
   -webkit-transform-origin: top left;
   -moz-transform-origin: top left;
   transform-origin: top left;
-}
-.persona-button iframe {
-  border: none;
-  background: transparent;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
 }
