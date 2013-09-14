@@ -1,14 +1,14 @@
 .persona-button {
-  position: relative;
   color: #fff;
   display: inline-block;
-  font-size: 15px;
+  font-size: inherit;
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
   line-height: 2;
   position: relative;
   text-decoration: none;
   text-shadow: 0 1px rgba(0, 0, 0, 0.5), 0 0 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
   background: #27aae1;
   border-radius: 3px;
   box-shadow: 0 5px 2px -4px rgba(0, 0, 0, 0.2);
@@ -22,52 +22,36 @@
   top: 1px;
   box-shadow: none;
 }
+.persona-button .sign-out-text {
+  display: none;
+}
+.persona-button.sign-in .sign-out-text {
+  display: none;
+}
+.persona-button.sign-in .sign-in-text {
+  display: inline;
+}
+.persona-button.sign-out .sign-out-text {
+  display: inline;
+}
+.persona-button.sign-out .sign-in-text {
+  display: none;
+}
 .persona-button .text {
   display: inline-block;
   padding: 0 0.5em 0 3em;
 }
 .persona-button .text:after {
-  background: url("./persona-guy.svg") center center no-repeat;
-  background-size: 1.5em;
+  background: url("./persona-guy.svg") left center no-repeat;
+  width: 3em;
+  background-size: contain;
   content: '';
   display: block;
-  width: 1.5em;
   position: absolute;
   bottom: 0;
   left: 0;
   top: 0;
   z-index: 10;
-}
-.persona-button .text:before {
-  content: '';
-  display: block;
-  height: 2em;
-  width: 1.8em;
-  position: absolute;
-  bottom: 0;
-  left: -0.3em;
-  top: 0;
-  z-index: 1;
-  background: #81cded;
-  border-radius: 3px 0 0 3px;
-}
-.persona-button:before {
-  content: '';
-  display: block;
-  height: 1.4142em;
-  width: 1.4142em;
-  position: absolute;
-  top: 0;
-  left: 1.5em;
-  z-index: 0;
-  background: #81cded;
-  box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.1);
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  transform: rotate(45deg);
-  -webkit-transform-origin: top left;
-  -moz-transform-origin: top left;
-  transform-origin: top left;
 }
 .persona-button .tip {
   position: absolute;
