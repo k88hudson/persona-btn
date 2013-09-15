@@ -1,5 +1,6 @@
 .persona-button {
-  color: #fff;
+  color: #FFF;
+  background: #27aae1;
   display: inline-block;
   font-size: inherit;
   font-family: "Open Sans", sans-serif;
@@ -9,12 +10,12 @@
   text-decoration: none;
   text-shadow: 0 1px rgba(0, 0, 0, 0.5), 0 0 1px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  border-radius: 3px;
+  border-radius: 7px 0 0 7px;
   box-shadow: 5px 5px 2px -4px rgba(0, 0, 0, 0.2);
 }
 .persona-button:hover,
 .persona-button:hover .tip:after {
-  background: #3db3e4;
+  box-shadow: 5px 5px 2px -4px rgba(0, 0, 0, 0.3);
 }
 .persona-button:active,
 .persona-button .persona-button:focus {
@@ -37,7 +38,6 @@
   display: none;
 }
 .persona-button .text {
-  background: #27aae1;
   display: inline-block;
   padding: 0 0.5em 0 2.8em;
   margin-left: 5px;
@@ -59,6 +59,7 @@
   background-size: contain;
   position: absolute;
   left: 100%;
+  margin-left: -2px;
   top: 0;
   height: 100%;
   width: 1.2em;
