@@ -1,7 +1,7 @@
 @personaBtnPath: '.';
 
 .persona-button {
-  @blue: #27aae1;
+  @blue: #27AAE1;
   .rotate (@deg: 180deg) {
     -webkit-transform: rotate(@deg);
     -moz-transform: rotate(@deg);
@@ -17,12 +17,11 @@
   position: relative;
   text-decoration: none;
   text-shadow: 0 1px rgba(0,0,0,0.5), 0 0 1px rgba(0,0,0,0.2);
-
   cursor: pointer;
 
-  background: @blue;
+
   border-radius: 3px;
-  box-shadow: 0 5px 2px -4px rgba(0,0,0,0.2);
+  box-shadow: 5px 5px 2px -4px rgba(0,0,0,0.2);
 
   &:hover,
   &:hover .tip:after {
@@ -58,12 +57,14 @@
   }
 
   .text {
+    background: @blue;
     display: inline-block;
-    padding: 0 0.5em 0 3em;
+    padding: 0 0.5em 0 2.8em;
+    margin-left: 5px;
   }
 
   .text:after{
-    background: url("@{personaBtnPath}/persona-guy.svg") left center no-repeat;
+    background: transparent url("@{personaBtnPath}/persona-guy.svg") left center no-repeat;
     width: 3em;
     background-size: contain;
     content: '';
@@ -77,33 +78,15 @@
   }
 
   .tip {
+    background: url("@{personaBtnPath}/point.svg") left center no-repeat;
+    background-size: contain;
     position: absolute;
     left: 100%;
     top: 0;
     height: 100%;
     width: 1.2em;
-    margin-left: -2px;
     overflow: hidden;
   }
-  .tip:after{
-    content: '';
-    display: block;
-    height: 1.4142em;
-    width: 1.4142em;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-
-    background: @blue;
-    box-shadow: 5px 5px 2px -4px rgba(0,0,0,0.2);
-    .rotate( 45deg );
-    -webkit-transform-origin: top left;
-    -moz-transform-origin: top left;
-    transform-origin: top left;
-  }
-
 }
 
 
