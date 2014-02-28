@@ -59,6 +59,12 @@
     white-space: nowrap;
   }
 
+  .text[dir="rtl"]:after {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    left: -5px;
+  }
+
   .text:after{
     background: transparent url("@{personaBtnPath}/persona-guy.svg") left center no-repeat;
     width: 3em;
@@ -84,6 +90,10 @@
     width: 1.2em;
     overflow: hidden;
   }
+
+  .tip[dir="rtl"] {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    margin-left: -3px;
+  }
 }
-
-
